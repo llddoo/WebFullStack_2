@@ -20,7 +20,8 @@ public class MemberService {
 		ActionFoward actionFoward = new ActionFoward();
 		String method = request.getMethod();
 		actionFoward.setPath("../WEB-INF/member/memberJoin.jsp");
-		if(method.toUpperCase().equals("POST")) {
+		actionFoward.setCheck(true);
+		if(method.toUpperCase().equals("POST")) { //equals는 비교하는것 
 			MemberDTO memberDTO = new MemberDTO();
 			memberDTO.setId(request.getParameter("id"));
 			memberDTO.setPw(request.getParameter("pw"));
@@ -28,7 +29,8 @@ public class MemberService {
 			memberDTO.setEmail(request.getParameter("email"));
 			memberDTO.setPhone(request.getParameter("phone"));
 			int result = memberDAO.memberJoin(memberDTO);
-			actionFoward.setPath("../index.jsp");
+			actionFoward.setPath("../index.do");
+			actionFoward.setCheck(false);
 		}
 		return actionFoward;
 		

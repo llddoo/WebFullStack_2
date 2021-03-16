@@ -15,7 +15,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">WebSiteName</a>
@@ -38,5 +38,11 @@
   </div>
 </nav>
   
+<div class="container">
+  <h3>Right Aligned Navbar</h3>
+  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+</div>
+
+	
 </body>
 </html>
