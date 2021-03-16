@@ -14,9 +14,10 @@
   	<servlet-name>member</servlet-name>
   	<servlet-class>com.iu.s1.member.MemberController</servlet-class>
   </servlet>
+  
   	<servlet-mapping>
   		<servlet-name>member</servlet-name>
-  		<url-pattern>/member/memberLogin.do</url-pattern>
+  		<url-pattern>/member/*</url-pattern>
   	</servlet-mapping>
   
 </web-app>

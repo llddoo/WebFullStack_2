@@ -10,8 +10,11 @@ public class MemberDAOTest {
 		MemberDAO memberDAO = new MemberDAO();
 		
 		MemberDTO memberDTO = new MemberDTO();
-		memberDTO.setId("iu1111");
-		memberDTO.setPw("pw11111");
+		memberDTO.setId("iu1");
+		memberDTO.setPw("pw1");
+		memberDTO.setName("pw11111");
+		memberDTO.setEmail("pw11111");
+		memberDTO.setPhone("pw11111");
 		
 		try {
 			memberDTO = memberDAO.login(memberDTO);
