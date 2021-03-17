@@ -18,7 +18,6 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -46,8 +45,8 @@
 
 	<div class="container">
 		<div class="row">
-		<h1>Member Join Page</h1>
-			<form class="form-horizontal" action="./memeberJoin.do" method="post">
+			<h1>Member Join Page</h1>
+			<form class="form-horizontal" action="./memberJoin.do" method="post">
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="id">ID:</label>
 					<div class="col-sm-10">
@@ -56,14 +55,16 @@
 					</div>
 				</div>
 
+
+
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="pwd">Password:</label>
+					<label class="control-label col-sm-2" for="pw">Password:</label>
 					<div class="col-sm-10">
-						<input type="password" class="form-control" id="pwd"
-							placeholder="Enter password" name="pwd">
+						<input type="password" class="form-control" id="pw"
+							placeholder="Enter password" name="pw">
 					</div>
 				</div>
-				
+
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="name">Name:</label>
 					<div class="col-sm-10">
@@ -71,6 +72,7 @@
 							placeholder="Enter Name" name="name">
 					</div>
 				</div>
+
 
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="email">Email:</label>
@@ -80,14 +82,14 @@
 					</div>
 				</div>
 				
-				<div class="form-group">
+							<div class="form-group">
 					<label class="control-label col-sm-2" for="phone">Phone:</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="Phone"
+						<input type="text" class="form-control" id="phone"
 							placeholder="Enter Phone" name="phone">
 					</div>
 				</div>
-				
+
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
 						<button type="submit" class="btn btn-default">Submit</button>
@@ -96,7 +98,7 @@
 			</form>
 
 		</div>
-	</div>
 
+	</div>
 </body>
 </html>
