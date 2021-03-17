@@ -61,7 +61,7 @@
 			<tbody>
 			<% for(int i=0;i<ar.size();i++){ %>
 				<tr>
-					<td><%=ar.get(i).getBookName() %></td>
+					<td><a href="./bankbookSelect.do?bookNumber=<%= ar.get(i).getBookNumber() %>"><%=ar.get(i).getBookName() %></a> </td>
 					<td><%=ar.get(i).getBookRate() %> </td>
 					<td><%=ar.get(i).getBookSale() %> </td>
 				</tr>
@@ -70,6 +70,7 @@
 			
 		</table>
 		
+		<a href="./bankbookWrite.do" class="btn btn-danger">WRITE </a>
 	
 	</div>
 </div>
